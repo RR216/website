@@ -1,0 +1,23 @@
+// === USE ====================================
+@use 'variables' as *;
+
+@use 'typefaces' as *;
+
+:global {
+    * {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        padding: var(--body-pad-vrt) var(--body-pad-hrz);
+        max-width: $max-width;
+        margin: 0 auto;
+        font-family: "Inter", "sans-serif";
+    }
+    h1 {
+        font-family: "Abril Fatface", "serif";
+        font-weight: 400;
+        font-size: var(--fontSize-h1);
+    }
+}

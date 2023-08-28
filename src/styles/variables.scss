@@ -1,0 +1,22 @@
+// === USE ====================================
+@use 'colors' as *;
+
+// === SASS VARIABLE ==========================
+$max-width: 1500px;
+
+:root {
+    /* === CSS VARIABLES ====================== */
+    --body-pad-hrz: 80px;
+    --body-pad-vrt: 65px;
+    --fontSize-h1: 5.5rem;
+    --fontSize-p: 1rem;
+    --fontSize-name: 1.6rem;
+
+    /* === COLORS ============================= */
+    /* light theme (default) */
+    // parse $light into CSS variables
+    @each $name, $value in $light {
+        --color-#{$name}: #{$value};
+    }
+    color-scheme: light;
+}
